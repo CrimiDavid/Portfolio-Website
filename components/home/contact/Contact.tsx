@@ -2,15 +2,17 @@ import { Reveal } from "@/components/utils/Reveal";
 import styles from "./contact.module.scss";
 import { AiFillMail } from "react-icons/ai";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, type ChangeEvent, FormEvent } from "react";
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
     email: "",
     message: "",
   });
+  console.log(formData)
+  
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -18,7 +20,7 @@ export const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Handle form submission logic here
     console.log(formData);
@@ -34,7 +36,7 @@ export const Contact = () => {
         </Reveal>
         <Reveal width="100%">
           <p className={styles.contactCopy}>
-            I&apos;d love to discuss more with you!Reach out to me through{" "}
+            I&apos;d love to discuss more with you! Reach out to me through{" "}
             <Link
               href="https://www.linkedin.com/in/david-crimi/"
               target="_blank"
@@ -92,8 +94,8 @@ export const Contact = () => {
                 </div>
                 {/* Submit Button */}
                 <div className="flex justify-center items-center">
-                  <button className="w-full shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
-                    Sign Up
+                  <button className="w-3/4 shadow bg-blue-500 hover:bg-blue-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
+                    Send
                   </button>
                 </div>
               </div>

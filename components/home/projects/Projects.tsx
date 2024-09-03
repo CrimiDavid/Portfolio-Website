@@ -19,7 +19,7 @@ export const Projects = () => {
 const projects = [
   {
     title: "Code Genius",
-    imgSrc: "",
+    imgSrc: "/project-imgs/CodeGenius.png",
     code: "", // Update this with your GitHub link if desired
     projectLink: "",
     tech: ["Next.js", "Flask", "PostgreSQL", "Tailwind CSS"],

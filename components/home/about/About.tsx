@@ -12,27 +12,29 @@ export const About = () => {
           <div className="w-full lg:w-3/4 pr-4">
             <Reveal>
               <p className={styles.aboutText}>
-              Hey! I&apos;m David and I am a Software Develeloper. I am currently in my fouth year of univerisry, I love learining technology that
-              is highly used and relevent in the workplace and am always eagar to learn now things
+              Hello! I'm David Crimi, a passionate and dedicated software developer with a strong foundation in computer science and a keen interest in backend development,
+              full-stack projects, and AI-driven technologies. Currently pursuing my B.Sc. in Computer Science at York University,
+              I have consistently sought out opportunities to deepen my knowledge and hone my skills,
+              both through formal education and hands-on projects.
               </p>
             </Reveal>
             <Reveal>
               <p className={styles.aboutText}>
-                My skills include HTML, CSS, JavaScript, and various frontend frameworks like React and Vue.js.
-                I&apos;ve also worked with backend technologies like Node.js, Firebase, MongoDB and PHP/Laravel, allowing me to build full-stack applications.
+              My technical expertise spans across several programming languages including Python, Java, and C,
+              and I'm proficient in using frameworks like React, Flask, and Next.js.
+              I've also worked extensively with databases such as PostgreSQL and Neo4j, and I'm comfortable navigating complex systems and solving challenging problems.
               </p>
             </Reveal>
             <Reveal>
               <p className={styles.aboutText}>
-                When I&apos;m not coding, I enjoy digital painting.
-                I believe that maintaining a healthy work-life balance is crucial for staying productive and motivated.
+              In addition to my technical projects, I'm also an AWS Certified Developer Associate and have completed the Meta Backend Developer certification through Coursera.
+              These certifications highlight my commitment to staying at the forefront of industry standards and best practices.
               </p>
             </Reveal>
             <Reveal>
               <p className={styles.aboutText}>
-                I&apos;m always looking for new challenges and opportunities to learn and grow as a developer.
-                If you&apos;re interested in working together or have any questions, please don&apos;t hesitate to get in touch!
-                🔗
+              Whether it's developing a new game in Python, creating complex scheduling algorithms in C,
+              or building dynamic web applications with React, I'm driven by a passion for coding and a desire to make an impact through technology.
               </p>
             </Reveal>
             <Reveal>

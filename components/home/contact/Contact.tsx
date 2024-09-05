@@ -32,7 +32,7 @@ export const Contact = () => {
           {/* Submit Button */}
           <div className="flex justify-center items-center">
             <a href="mailto:davidcrimi6@gmail.com">
-              <OutlineButton>Email</OutlineButton>
+              <StandardButton>Email</StandardButton>
             </a>
           </div>
         </Reveal>

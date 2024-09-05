@@ -14,30 +14,11 @@ export default function home() {
 
         <meta property="og:title" content="David Crimi | Software Developer" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://deverajc.com/" />
-        <meta
-          property="og:image"
-          content="https://deverajc.com/screenshot.png"
-        />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
         <meta
           property="og:description"
-          content="Hey! I'm John Carlo Devera, and I'm a Bachelor of Science in Information Technology graduate."
-        />
-
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@jc_devz" />
-        <meta
-          name="twitter:title"
-          content="John Carlo Devera | Frontend Developer"
-        />
-        <meta
-          name="twitter:description"
-          content="Hey! I'm John Carlo Devera, and I'm a Bachelor of Science in Information Technology graduate."
-        />
-        <meta name="twitter:creator" content="@jc_devz" />
-        <meta
-          name="twitter:image"
-          content="https://deverajc.com/screenshot.png"
+          content="Hey! I', David Crimi and I am a software developer"
         />
       </Head>
       <Home />

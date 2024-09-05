@@ -1,10 +1,15 @@
 // pages/api/contact.ts
 import { NextApiRequest, NextApiResponse } from 'next'
 
+//Dictionary to store submissions times per IP address
+let submissions: { [key: string]: number } = {}
+
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  const clientIp = req.headers['x-forwarded-for'] as string
+  console.log(clientIp)
   if (req.method === 'POST') {
     const { name, email, message } = req.body
 
@@ -15,9 +20,21 @@ export default async function handler(
         .json({ message: 'Email and message are required.' })
     }
 
+    // Rate limiting: Allow one submission per IP every 600 seconds
+    const currentTime = Date.now()
+    const lastSubmissionTime = submissions[clientIp as string] || 0
+
+    if (currentTime - lastSubmissionTime < 600000) {
+      // 600 seconds
+      return res
+        .status(429)
+        .json({ message: 'You are submitting too fast. Please wait a moment.' })
+    }
+
+    submissions[clientIp as string] = currentTime
+
     try {
       // Simulate an email being sent or any backend logic here
-      // For example, use Nodemailer, or log the data
       console.log(`Name: ${name}, Email: ${email}, Message: ${message}`)
 
       // Respond with a success message

@@ -46,7 +46,7 @@ const projects = [
   },
   {
     title: 'Six Degrees of Kevin Bacon',
-    imgSrc: '',
+    imgSrc: '/project-imgs/bacon.png',
     code: '',
     projectLink: '',
     tech: ['Java', 'Neo4j'],

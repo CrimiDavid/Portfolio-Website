@@ -47,7 +47,7 @@ const projects = [
   {
     title: 'Six Degrees of Kevin Bacon',
     imgSrc: '/project-imgs/bacon.png',
-    code: '',
+    code: 'https://github.com/tarang5757/project',
     projectLink: '',
     tech: ['Java', 'Neo4j'],
     description:
@@ -121,7 +121,7 @@ const projects = [
     title: 'Advanced Process Scheduler Simulation',
     imgSrc: '/project-imgs/Scheduler.png',
     code: 'https://github.com/CrimiDavid/Process-Scheduler', // Update this with your GitHub link if desired
-    projectLink: '',
+    projectLink: 'https://github.com/CrimiDavid/Process-Scheduler',
     tech: ['C'],
     description:
       'A comprehensive system scheduler simulator developed using C.',

@@ -31,6 +31,11 @@ export const Hero = () => {
                 some of the cool things I have done.
               </p>
             </Reveal>
+            <Reveal>
+              <button>
+                Check out my blog
+              </button>
+            </Reveal>
           </div>
           <motion.div
               initial={{ y: -30, opacity: 0 }}

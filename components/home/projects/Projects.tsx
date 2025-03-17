@@ -1,49 +1,75 @@
 import { SectionHeader } from '@/components/utils/SectionHeader'
 import { Project } from './Project'
 import styles from './projects.module.scss'
+import Image from 'next/image'
 
 export const Projects = () => {
-  return (
-    <section className="section-wrapper" id="projects">
-      <SectionHeader title="Projects" dir="r" />
+    return (
+        <section className="section-wrapper" id="projects">
+            <SectionHeader title="Projects" dir="r" />
 
-      <div className={styles.projects}>
-        {projects.map((project) => {
-          return <Project key={project.title} {...project} />
-        })}
-      </div>
-    </section>
-  )
+            <div className={styles.projects}>
+                {projects.map((project) => {
+                    return <Project key={project.title} {...project} />
+                })}
+            </div>
+        </section>
+    )
 }
 
 const projects = [
-  {
-    title: 'Code Genius',
-    imgSrc: '/project-imgs/CodeGenius.png',
-    code: 'https://github.com/MatthewFrieri/HackThe6ix-CodeGenius',
-    projectLink: '',
-    tech: ['Next.js', 'Flask', 'PostgreSQL', 'Tailwind CSS'],
-    description:
-      'An AI-driven code annotation tool that parses and analyzes code files to provide detailed explanations, readability scores, and context-aware suggestions.',
-    modalContent: (
-      <>
-        <p>
-          Developed CodeGenius, an AI-driven code annotation tool to enhance
-          code comprehension and maintainability for developers.
-        </p>
-        <p>
-          Integrated Next.js, Tailwind CSS, and Flask to create a seamless
-          frontend and backend system. Leveraged Groq and Llama models for
-          accurate code analysis and implemented solutions for JSON data
-          compatibility and LLM accuracy challenges.
-        </p>
-        <p>
-          Implemented robust user authentication by integrating a PostgreSQL
-          database, ensuring secure storage and management of user credentials.
-        </p>
-      </>
-    ),
-  },
+    {
+        title: 'Impactify',
+        imgSrc: '/project-imgs/Impactify.png',
+        code: 'https://github.com/MatthewFrieri/HackTheValley_Impactify',
+        projectLink: '',
+        tech: ['React', 'Django', 'PostgreSQL', 'Docker', 'IoT'],
+        description:
+            'A health monitoring system that integrates advanced sensors into sports helmets to track and analyze impact data, helping prevent brain injuries in contact sports.',
+        modalContent: (
+            <>
+                <p>
+                    Developed Impactify, an innovative brain health monitoring solution for athletes in contact sports that won 1st place at Hack The Valley 2024.
+                </p>
+                <p>
+                    Designed and implemented a comprehensive system that integrates IoT hardware (ESP32 microprocessor, pressure sensors, accelerometer) into sports helmets to collect and analyze impact data in real-time.
+                </p>
+                <p>
+                    Built a robust full-stack application using React for the frontend interface, Django for the backend API, and PostgreSQL for data storage, enabling athletes and coaches to monitor brain health metrics and receive SMS notifications about potentially dangerous impacts.
+                </p>
+                <p>
+                    Overcame significant hardware integration challenges by designing a compact circuit system that maintained the helmet's protective functionality while accurately capturing critical sensor data for analysis.
+                </p>
+            </>
+        ),
+    },
+    {
+        title: 'Code Genius',
+        imgSrc: '/project-imgs/CodeGenius.png',
+        code: 'https://github.com/MatthewFrieri/HackThe6ix-CodeGenius',
+        projectLink: '',
+        tech: ['Next.js', 'Flask', 'PostgreSQL', 'Tailwind CSS'],
+        description:
+            'An AI-driven code annotation tool that parses and analyzes code files to provide detailed explanations, readability scores, and context-aware suggestions.',
+        modalContent: (
+            <>
+                <p>
+                    Developed CodeGenius, an AI-driven code annotation tool to enhance
+                    code comprehension and maintainability for developers.
+                </p>
+                <p>
+                    Integrated Next.js, Tailwind CSS, and Flask to create a seamless
+                    frontend and backend system. Leveraged Groq and Llama models for
+                    accurate code analysis and implemented solutions for JSON data
+                    compatibility and LLM accuracy challenges.
+                </p>
+                <p>
+                    Implemented robust user authentication by integrating a PostgreSQL
+                    database, ensuring secure storage and management of user credentials.
+                </p>
+            </>
+        ),
+    },
   {
     title: 'Six Degrees of Kevin Bacon',
     imgSrc: '/project-imgs/bacon.png',

@@ -6,60 +6,59 @@ import styles from './about.module.scss'
 
 export const About = () => {
   return (
-    <section id="about" className="section-wrapper">
-      <SectionHeader title="About" dir="l" />
-      <div className={styles.about}>
-        <div className="w-full lg:w-3/4 pr-4">
-          <Reveal>
-            <p className={styles.aboutText}>
-              Hello! I&apos;m David Crimi, a passionate and dedicated software
-              developer with a strong foundation in computer science and a keen
-              interest in backend development, full-stack projects, and
-              AI-driven technologies. Currently pursuing my B.Sc. in Computer
-              Science at York University, I have consistently sought out
-              opportunities to deepen my knowledge and hone my skills, both
-              through formal education and hands-on projects.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutText}>
-              My technical expertise spans across several programming languages
-              including Python, Java, and C, and I&apos;m proficient in using
-              frameworks like React, Flask, and Next.js. I&apos;ve also worked
-              extensively with databases such as PostgreSQL and Neo4j, and
-              I&apos;m comfortable navigating complex systems and solving
-              challenging problems.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutText}>
-              In addition to my technical projects, I&apos;m also an AWS
-              Certified Developer Associate and have completed the Meta Backend
-              Developer certification through Coursera. These certifications
-              highlight my commitment to staying at the forefront of industry
-              standards and best practices.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutText}>
-              Whether it&apos;s developing a new game in Python, creating
-              complex scheduling algorithms in C, or building dynamic web
-              applications with React, I&apos;m driven by a passion for coding
-              and a desire to make an impact through technology.
-            </p>
-          </Reveal>
-          <Reveal>
-            <div className={styles.links}>
-              <MyLinks />
-            </div>
-          </Reveal>
+      <section id="about" className="section-wrapper">
+        <SectionHeader title="About" dir="l" />
+        <div className={styles.about}>
+          <div className="w-full lg:w-3/4 pr-4">
+            <Reveal>
+              <p className={styles.aboutText}>
+                Hello! I&apos;m David Crimi, a passionate software developer with a strong
+                foundation in computer science and expertise in backend development,
+                full-stack applications, and cloud technologies. I recently completed my
+                B.Sc. in Computer Science with Honors from York University and am currently
+                working as a Software Analyst Intern at Hitachi Rail.
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className={styles.aboutText}>
+                My technical expertise spans multiple programming languages including Python,
+                Java, C++, and JavaScript. I&apos;m proficient with modern frameworks such as
+                React, Django, Flask, and Next.js, and have experience working with various
+                databases including PostgreSQL, MySQL, MongoDB, and Neo4j. I&apos;m particularly
+                interested in building scalable systems and implementing efficient DevOps practices.
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className={styles.aboutText}>
+                I&apos;ve developed several impactful projects, including Impactify—an IoT-based
+                brain health monitoring system for contact sports that won first place at Hack
+                the Valley among 400 participants. I also created a Six Degrees of Kevin Bacon
+                application using Neo4j, demonstrating advanced graph traversal algorithms, and
+                an Optimal Uber Finder application that uses geospatial algorithms to save users
+                an average of 30% on ride costs.
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className={styles.aboutText}>
+                As an AWS Certified Developer Associate and Meta Backend Developer certificate
+                holder, I&apos;m committed to industry best practices and continuous learning.
+                At Hitachi Rail, I&apos;ve improved CI/CD pipelines using Jenkins and Docker,
+                achieving a 40% reduction in build execution time while enhancing system stability
+                and documentation.
+              </p>
+            </Reveal>
+            <Reveal>
+              <div className={styles.links}>
+                <MyLinks />
+              </div>
+            </Reveal>
+          </div>
+          <div className="w-full lg:w-1/4 h-screen pl-4">
+            <Reveal>
+              <Skills />
+            </Reveal>
+          </div>
         </div>
-        <div className="w-full lg:w-1/4 h-screen pl-4">
-          <Reveal>
-            <Skills />
-          </Reveal>
-        </div>
-      </div>
-    </section>
+      </section>
   )
 }

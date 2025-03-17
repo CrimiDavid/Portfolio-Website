@@ -5,9 +5,10 @@ interface Props {
   title: string;
   position: string;
   time: string;
-  cert: string;
+  cert?: string;
   description: string;
   tech: string[];
+  location?: string;
 }
 
 export const ExperienceItem = ({

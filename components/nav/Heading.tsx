@@ -8,7 +8,7 @@ export const Heading = () => {
       <MyLinks />
       {/* <div className={styles.headingButtons}> */}
 
-      <OutlineButton onClick={() => window.open("/David_Crimi_Resume_2024-2025.pdf")}>
+      <OutlineButton onClick={() => window.open("/David_Crimi_Resume_2025-2026.pdf")}>
         My resume
       </OutlineButton>
       {/* </div> */}
@@ -17,14 +17,4 @@ export const Heading = () => {
 };
 
 {
-  /* <a href="https://www.buymeacoffee.com/jcdevz" target="_blank">
-  <img
-    src="https://cdn.buymeacoffee.com/buttons/v2/arial-violet.png"
-    alt="Buy Me A Coffee"
-    style={{
-      height: "46px !important",
-      width: "185px !important",
-    }}
-  />
-</a> */
 }

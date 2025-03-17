@@ -4,7 +4,7 @@ import { ExperienceItem } from "./ExperienceItem";
 export const Experience = () => {
   return (
     <section className="section-wrapper" id="experience">
-      <SectionHeader title="Certifications" dir="l" />
+      <SectionHeader title="Experience and Certifications" dir="l" />
       {experience.map((item) => (
         <ExperienceItem key={item.title} {...item} />
       ))}
@@ -13,6 +13,15 @@ export const Experience = () => {
 };
 
 const experience = [
+  {
+    title: "Software Analyst Intern",
+    position: "Hitachi Rail",
+    time: "January 2025 - present",
+    location: "Toronto, Ontario",
+    description:
+        "Developed a high-performance CI/CD pipeline in Jenkins utilizing Docker containerization, achieving a 40% reduction in build execution time.\n• Performed systematic troubleshooting and strategic refactoring of critical deployment scripts, substantially improving system stability and operational reliability.\n• Authored comprehensive company documentation.",
+    tech: ["Jenkins", "Docker", "CI/CD", "Deployment Scripts", "Technical Documentation"],
+  },
   {
     title: "Certified Developer Associate - DVA-C02",
     position: "AWS",
